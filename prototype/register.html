@@ -2,9 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Profile | EventManagementSystem</title>
+        <title>Register | EventManagementSystem</title>
         <link rel="stylesheet" href="./styles/fonts.css">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/responsive.css">
@@ -12,12 +10,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
-    <body class="page-profile">
+    <body class="page-register">
         <header>
             <div class="navigation-wrapper">
                 <div class="container-fluid">
                     <div class="col-sm-2" id="logo">
-                        <a href="/">
+                        <a href="home.html">
                             <span class="fa-stack">
                                 <i class="fa logo-hex fa-stack-2x"></i>
                                 <i class="fa logo-fa fa-map-marker fa-stack-2x"></i>
@@ -40,35 +38,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <div id="user-nav">
-                        <div class="user-details">
-                            <div class="profile-image">
-                                <a href="profile.html">
-                                    <img src="./uploads/users/avatar.jpg" id="profile-avatar">
-                                </a>
-                                <div class="user-int">
-                                    <span class="dropdown-user-menu">Hello, Pesho Peshev</span>
-                                    <span class="socials">
-                                        <div class="item" data-toggle="tooltip" title="Profile" data-placement="bottom">
-                                            <a href="profile.html">
-                                                <i class="fa fa-user fa-spin-hover"></i>
-                                            </a>
-                                        </div>
-                                        <div class="item" data-toggle="tooltip" title="Calendar" data-placement="bottom">
-                                            <a href="">
-                                                <i class="fa fa-calendar fa-fw"></i>
-                                            </a>
-                                        </div>
-                                        <div class="item" data-toggle="tooltip" title="Logout" data-placement="bottom">
-                                            <a href="home.html">
-                                                <i class="fa fa-sign-out fa-fw"></i>
-                                            </a>
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -79,19 +48,19 @@
                         <div class="row">
                             <div class="col-sm-8 col-sm-offset-2 text"></div>
                             <h1>
-                                <strong>Pesho Peshev's profile</strong>
+                                <strong>Make a new registration</strong>
                             </h1>
+                            <div class="description">
+                                <p>If you don't have an account yet, you can register and get access to additional features like personal calendar, event scheduler and many more..</p>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-8 profile-form-wrapper">
+                            <div class="col-sm-8 register-form-wrapper">
                                 <div class="form-box">
                                     <div class="form-top">
                                         <div class="form-top-left">
-                                            <h3>Here you can edit your profile information</h3>
-                                            <img src="./uploads/users/avatar.jpg" id="profile-avatar">
-                                            <div class="btn-wrap">
-                                                <a class="btn btn-green" href="">Change your avatar</a>
-                                            </div>
+                                            <h3>Sign up now</h3>
+                                            <p>Fill in the form below to get instant access:</p>
                                         </div>
                                         <div class="form-top-right">
                                             <i class="fa fa-pencil"></i>
@@ -102,28 +71,38 @@
                                             <strong>The following errors need to be corrected:</strong>
                                             <ul></ul>
                                         </div>
-                                        <form class="profile-form" role="form" action="" method="post" id="user-profile-form">
+                                        <form class="registration-form" role="form" action="" method="post" id="user-registration-form">
                                             <div class="form-group">
-                                                <label for="form-email">Email</label>
-                                                <input class="form-email form-control" type="text" name="email" value="pesho@abv.bg" id="form-email">
+                                                <label class="sr-only" for="form-username"></label>
+                                                <input class="form-username form-control" type="text" name="username" placeholder="Username..." id="form-username">
+                                                <span class="error error-username"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="form-email"></label>
+                                                <input class="form-email form-control" type="text" name="email" placeholder="Email..." id="form-email">
                                                 <span class="error error-email"></span>
                                             </div>
                                             <div class="form-group">
-                                                <label for="form-first-name">First name</label>
-                                                <input class="form-first-name form-control" type="text" name="firstName" value="Pesho" id="form-first-name">
+                                                <label class="sr-only" for="form-password"></label>
+                                                <input class="form-password form-control" type="password" name="password" placeholder="Password.." id="form-password">
+                                                <span class="error error-password"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="form-first-name">First name</label>
+                                                <input class="form-first-name form-control" type="text" name="firstName" placeholder="First name..." id="form-first-name">
                                                 <span class="error error-firstname"></span>
                                             </div>
                                             <div class="form-group">
-                                                <label for="form-last-name">Last name</label>
-                                                <input class="form-last-name form-control" type="text" name="lastName" value="Peshev" id="form-last-name">
+                                                <label class="sr-only" for="form-last-name">Last name</label>
+                                                <input class="form-last-name form-control" type="text" name="lastName" placeholder="Last name..." id="form-last-name">
                                                 <span class="error error-lastname"></span>
                                             </div>
                                             <div class="form-group">
-                                                <label for="form-age">Age</label>
-                                                <input class="form-age form-control" type="text" name="age" value="22" id="form-age">
+                                                <label class="sr-only" for="form-age">Age</label>
+                                                <input class="form-age form-control" type="text" name="age" placeholder="Age..." id="form-age">
                                                 <span class="error error-age"></span>
                                             </div>
-                                            <button class="btn" type="button" id="save-profile-button">Save</button>
+                                            <a class="btn" id="register-button" href="profile.html">Sign me up!</a>
                                         </form>
                                     </div>
                                 </div>
