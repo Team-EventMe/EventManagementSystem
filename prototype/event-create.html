@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Event | EventManagementSystem</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class="page-register page-create-event">
+    <header>
+        <div class="navigation-wrapper">
+            <div class="container-fluid">
+                <div class="col-sm-2" id="logo">
+                    <a href="home.html">
+                        <span class="fa-stack">
+                            <i class="fa logo-hex fa-stack-2x"></i>
+                            <i class="fa logo-fa fa-map-marker fa-stack-2x"></i>
+                        </span>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav navbar-nav" id="main-nav">
+                        <li class="menu-item hvr-underline-from-center">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="menu-item hvr-underline-from-center">
+                            <a href="event-list.html">Events</a>
+                        </li>
+                        <li class="menu-item hvr-underline-from-center">
+                            <a href="event-create.html">Create Event</a>
+                        </li>
+                        <li class="menu-item hvr-underline-from-center">
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="user-nav">
+                        <div class="user-details">
+                            <div class="profile-image">
+                                <a href="profile.html">
+                                    <img src="./uploads/users/avatar.jpg" id="profile-avatar">
+                                </a>
+                                <div class="user-int">
+                                    <span class="dropdown-user-menu">Hello, Pesho Peshev</span>
+                                    <span class="socials">
+                                        <div class="item" data-toggle="tooltip" title="Profile" data-placement="bottom">
+                                            <a href="profile.html">
+                                                <i class="fa fa-user fa-spin-hover"></i>
+                                            </a>
+                                        </div>
+                                        <div class="item" data-toggle="tooltip" title="Calendar" data-placement="bottom">
+                                            <a href="">
+                                                <i class="fa fa-calendar fa-fw"></i>
+                                            </a>
+                                        </div>
+                                        <div class="item" data-toggle="tooltip" title="Logout" data-placement="bottom">
+                                            <a href="home.html">
+                                                <i class="fa fa-sign-out fa-fw"></i>
+                                            </a>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div class="top-container">
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text"></div>
+                        <h1>
+                            <strong>Event creator</strong>
+                        </h1>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 register-form-wrapper">
+                            <div class="form-box">
+                                <div class="form-top">
+                                    <div class="form-top-left">
+                                        <h3>Create your own event</h3>
+                                        <p>Fill in the form below:</p>
+                                    </div>
+                                    <div class="form-top-right">
+                                        <i class="fa fa-calendar-o"></i>
+                                    </div>
+                                </div>
+                                <div class="form-bottom">
+                                    <div class="alert alert-warning" id="error-container">
+                                        <strong>The following errors need to be corrected:</strong>
+                                        <ul></ul>
+                                    </div>
+                                    <form class="registration-form" role="form" enctype="multipart/form-data" action="" method="post" id="user-create-form">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-name"></label>
+                                            <input class="form-name form-control" type="text" name="name" placeholder="Name..." id="form-name">
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-email"></label>
+                                            <select class="form-control" name="eventType" id="eventType-drop-down">
+                                                <option selected disabled>Choose category</option>
+                                                <option value="Sport">Sport</option>
+                                                <option value="Entertainment">Entertainment</option>
+                                                <option value="Education">Education</option>
+                                            </select>
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-password"></label>
+                                            <select class="form-control" name="country" id="country-drop-down">
+                                                <option selected disabled>Choose country</option>
+                                                <option value="Bulgaria">Bulgaria</option>
+                                                <option value="Germany">Germany</option>
+                                            </select>
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-password"></label>
+                                            <select class="form-control" name="city" id="city-drop-down">|
+                                                <option selected disabled>Choose city</option>
+                                                <option value="Burgas" id="city-option" country="Bulgaria">Burgas</option>
+                                                <option value="Plovdiv" id="city-option" country="Bulgaria">Plovdiv</option>
+                                                <option value="Varna" id="city-option" country="Bulgaria">Varna</option>
+                                                <option value="Sofia" id="city-option" country="Bulgaria">Sofia</option>
+                                                <option value="Aachen" id="city-option" country="Germany">Aachen</option>
+                                                <option value="Lovech" id="city-option" country="Bulgaria">Lovech</option>
+                                                <option value="Ruse" id="city-option" country="Bulgaria">Ruse</option>
+                                                <option value="Veliko Tarnovo" id="city-option" country="Bulgaria">Veliko Tarnovo</option>
+                                                <option value="Cologne" id="city-option" country="Germany">Cologne</option>
+                                                <option value="Munich" id="city-option" country="Germany">Munich</option>
+                                            </select>
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-address"></label>
+                                            <input class="form-address form-control" type="text" name="address" placeholder="Address.." id="form-address">
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-description"></label>
+                                            <textarea class="form-description form-control" type="text" name="description" placeholder="Description..." id="event-description"></textarea>
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-dateOfEvent"></label>
+                                            <input class="form-dateOfEvent form-control datepicker" type="text" name="dateOfEvent" placeholder="Start date..." id="">
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-endDateOfEvent"></label>
+                                            <input class="form-dateOfEvent form-control datepicker" type="text" name="endDateOfEvent" placeholder="End date..." id="">
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-capacity"></label>
+                                            <input class="form-capacity form-control" type="text" name="capacity" placeholder="Capacity.." id="form-capacity">
+                                            <span class="error"></span>
+                                        </div>
+                                        <label>You can either provide a url or upload an image for the cover of your event</label>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-coverUrl"></label>
+                                            <input class="form-coverUrl form-control" type="text" name="coverUrl" placeholder="Cover Url.." id="form-coverUrl">
+                                            <span class="error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="form-file">File</label>
+                                            <input class="form-file form-control" type="file" multiple="multiple" name="file" id="form-file">
+                                            <span class="error"></span>
+                                        </div>
+                                        <button class="btn" type="button" id="create-button">Create Event</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
