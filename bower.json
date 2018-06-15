@@ -1,0 +1,30 @@
+{
+  "name": "eventme",
+  "version": "1.0.0",
+  "description": "Event Management System",
+  "main": "app.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Team-EventMe/EventManagementSystem",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "hover": "^2.3.1",
+    "animate.css": "^3.5.2",
+    "jquery-backstretch": "^2.1.16",
+    "isotope": "^3.0.1",
+    "jqueryui-timepicker-addon": "^1.6.3",
+    "scheduler": "^4.3.1",
+    "isotope-layout": "isotope#^3.0.6"
+  },
+  "resolutions": {
+    "jquery": "^3.1.1"
+  }
+}
