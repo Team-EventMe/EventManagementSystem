@@ -11,7 +11,7 @@ require('./routers')(app, data);
 // Create event and user
 // let event = {
 //     name: 'HackConf', eventType: 'Education', city: 'Sofia', country: 'Bulgaria', address: 'Al. Malinov', description: 'IT Conferencerhierhyieuryieuryeiuryieyrieryeiuryeiuyrieuyrieuyrieuyrieuyrieuryeiuyreiryeiuryeiuryieyrieyre',
-//     dateOfEvent: new Date('2016-12-18 10:00:00'), endDateOfEvent: new Date('2016-12-18 12:00:00'), coverUrl: 'http://radorado.me/wp-content/uploads/2015/01/hackbulgaria.png', capacity: 500, minAge: 10, rating: 5,
+//     dateOfEvent: new Date('2018-12-18 10:00:00'), endDateOfEvent: new Date('2018-12-18 12:00:00'), coverUrl: 'http://radorado.me/wp-content/uploads/2015/01/hackbulgaria.png', capacity: 500, minAge: 10, rating: 5,
 //     isDeleted: false, isApproved: true
 // };
 
